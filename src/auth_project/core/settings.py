@@ -18,6 +18,7 @@ class DBSettings(BaseSettings):
 
 class Settings(BaseSettings):
     db_settings: DBSettings = DBSettings()
+    secret_key: SecretStr
 
 
 settings = Settings()
